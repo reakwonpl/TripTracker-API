@@ -1,0 +1,14 @@
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\bin\Debug\netcoreapp2.2\TripTracker.deps.json
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\bin\Debug\netcoreapp2.2\TripTracker.runtimeconfig.json
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\bin\Debug\netcoreapp2.2\TripTracker.runtimeconfig.dev.json
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\bin\Debug\netcoreapp2.2\TripTracker.dll
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\bin\Debug\netcoreapp2.2\TripTracker.pdb
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.csprojAssemblyReference.cache
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.csproj.CoreCompileInputs.cache
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.RazorAssemblyInfo.cache
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.RazorAssemblyInfo.cs
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.AssemblyInfoInputs.cache
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.AssemblyInfo.cs
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.RazorTargetAssemblyInfo.cache
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.dll
+R:\Repozytoria - RKW\GIT\Asp.Net\TripTracker\obj\Debug\netcoreapp2.2\TripTracker.pdb
