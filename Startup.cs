@@ -19,6 +19,7 @@ namespace TripTracker
 {
     public class Startup
     {
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -42,7 +43,7 @@ namespace TripTracker
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, TripContext tripContext)
         {
 
             
@@ -66,6 +67,7 @@ namespace TripTracker
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            tripContext.SeedData(app.ApplicationServices);
         }
     }
 }

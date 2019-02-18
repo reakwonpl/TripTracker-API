@@ -60,17 +60,35 @@ namespace TripTracker.Controllers{
         // PUT api/trips/5
         [HttpPut("{id}")]
         //more like update
-        public void Put(int id, [FromBody] Trip value)
+        public async Task<IActionResult> PutAsync(int id, [FromBody] Trip value)
         {
+            if(!_context.Trips.Any( x => x.Id == id))
+            {
+                return NotFound();
+            }
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             _context.Trips.Update(value);
-             _context.SaveChanges();
+            await _context.SaveChangesAsync();
+
+             return Ok();
         }
 
         // DELETE api/trips/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
-            _context.Remove(id);
+            var myTrip = _context.Trips.Find(id);
+             if(myTrip == null)
+            {
+                return NotFound();
+            }
+
+            _context.Trips.Remove(myTrip);
+            _context.SaveChanges();
+            return NoContent();
         }
     }
 }
