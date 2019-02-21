@@ -28,7 +28,8 @@
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.2.2",
           "Microsoft.NETCore.App": "2.2.0",
-          "Swashbuckle.AspNetCore": "4.0.1"
+          "Swashbuckle.AspNetCore": "4.0.1",
+          "System.ComponentModel.Annotations": "4.5.0"
         },
         "runtime": {
           "TripTracker.dll": {}

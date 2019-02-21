@@ -12525,7 +12525,8 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.2.2",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Swashbuckle.AspNetCore >= 4.0.1"
+      "Swashbuckle.AspNetCore >= 4.0.1",
+      "System.ComponentModel.Annotations >= 4.5.0"
     ]
   },
   "packageFolders": {
@@ -12535,11 +12536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "r:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.csproj",
+      "projectUniqueName": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.csproj",
       "projectName": "TripTracker",
-      "projectPath": "r:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.csproj",
+      "projectPath": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.csproj",
       "packagesPath": "C:\\Users\\barto\\.nuget\\packages\\",
-      "outputPath": "r:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\obj\\",
+      "outputPath": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12593,6 +12594,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[4.0.1, )"
+          },
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "[4.5.0, )"
           }
         },
         "imports": [
