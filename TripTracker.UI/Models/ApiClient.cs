@@ -30,5 +30,18 @@ namespace TripTracker.UI.Models
             ///Newtonsoft.json package
             return await response.Content.ReadAsJsonAsync<List<Trip>>();
         }
+
+        public async Task PutTripAsync(Trip tripToUpdate)
+        {
+            var response = await _httpClient.PutAsJsonAsync($"/api/Trips/{tripToUpdate.Id}",tripToUpdate);
+            response.EnsureSuccessStatusCode();
+        }
+
+        public async Task TripToAddAsync(Trip tripToAdd)
+        {
+            var respone = await _httpClient.PostAsJsonAsync("/api/Trips", tripToAdd);
+            respone.EnsureSuccessStatusCode();
+
+        }
     }
 }

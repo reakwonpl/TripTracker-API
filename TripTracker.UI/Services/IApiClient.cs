@@ -8,5 +8,10 @@ namespace TripTracker.UI.Services
     {
          Task<List<Trip>> GetTripsAsync();
          Task<Trip> GetTripAsync(int id);
+         Task PutTripAsync(Trip tripToUpdate);
+         Task TripToAddAsync(Trip tripToAdd);
+         
+
+         
     }
 }
