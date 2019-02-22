@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TripTracker.Data;
+using TripTracker.DTO;
 using TripTracker.Models;
 
 namespace TripTracker.Controllers{
@@ -25,6 +26,15 @@ namespace TripTracker.Controllers{
         {
            var trips = await _context.Trips
                 .AsNoTracking()
+                // .Include( x => x.Segments)
+                // .Select( x => new TripWithSegments
+                // {
+                //     Id = x.Id,
+                //     Name = x.Name,
+                //     StartDate = x.StartDate,
+                //     EndDate = x.EndDate,
+                //     Segments = x.Segments.ToList<DTO.Segment>()
+                // })
                 .ToListAsync();
            return Ok(trips);
         }
@@ -32,19 +42,28 @@ namespace TripTracker.Controllers{
         // GET api/trips/5
         [HttpGet("{id}")]
        // public async Task<Trip> GetAsync(int id)
-       public Trip Get(int id)
+       public Models.Trip Get(int id)
         {
             // var trip = await _context.Trips            
             // .FindAsync(id);
 
             // return trip;
-            return _context.Trips.Find(id);
+             return _context.Trips.Find(id);
+
+            // return _context.Trips.Select( x => new TripWithSegments
+            // {
+            //      Id = x.Id,
+            //         Name = x.Name,
+            //         StartDate = x.StartDate,
+            //         EndDate = x.EndDate,
+            //         Segments = x.Segments.ToList<DTO.Segment>()
+            // }).SingleOrDefault(x => x.Id == id);
         }
 
         // POST api/trips
         [HttpPost]
         //more like add
-        public IActionResult Post([FromBody] Trip value)
+        public IActionResult Post([FromBody] Models.Trip value)
         {
             //checkin
             if (!ModelState.IsValid)
@@ -60,7 +79,7 @@ namespace TripTracker.Controllers{
         // PUT api/trips/5
         [HttpPut("{id}")]
         //more like update
-        public async Task<IActionResult> PutAsync(int id, [FromBody] Trip value)
+        public async Task<IActionResult> PutAsync(int id, [FromBody] Models.Trip value)
         {
             if(!_context.Trips.Any( x => x.Id == id))
             {

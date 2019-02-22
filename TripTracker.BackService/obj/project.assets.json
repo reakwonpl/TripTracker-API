@@ -12536,11 +12536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.csproj",
+      "projectUniqueName": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.BackService\\TripTracker.csproj",
       "projectName": "TripTracker",
-      "projectPath": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.csproj",
+      "projectPath": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.BackService\\TripTracker.csproj",
       "packagesPath": "C:\\Users\\barto\\.nuget\\packages\\",
-      "outputPath": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\obj\\",
+      "outputPath": "R:\\Repozytoria - RKW\\GIT\\Asp.Net\\TripTracker\\TripTracker.BackService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

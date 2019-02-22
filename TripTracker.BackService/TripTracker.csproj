@@ -13,4 +13,10 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />   
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TripTracker.UI\TripTracker.UI.csproj" />
+  </ItemGroup>
+
+ 
+
 </Project>

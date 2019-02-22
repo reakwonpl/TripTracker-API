@@ -2,7 +2,7 @@ using System;
 
 namespace TripTracker.Models
 {
-    public class Segments : DTO.Segment
+    public class Segment : DTO.Segment
     {
         // public int Id {get;set;}
         // public int TripId {get;set;}

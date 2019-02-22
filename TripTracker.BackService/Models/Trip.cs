@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace TripTracker.Models
 {
@@ -12,7 +13,7 @@ namespace TripTracker.Models
         // public DateTime StartDate {get;set;}
         // [Required]
         // public DateTime EndDate {get;set;}
-        
+        public virtual ICollection<Segment> Segments {get;set;}
     
 
     }
